@@ -1,4 +1,4 @@
-<h1>Python Dictionary Generator</h1>
+<h1>Python Dictionary Generator v0.2</h1>
 This is a simple, easy to use, lightweight dictionary generator that requests a filename, baseword, and set of values to create a hybrid dictionary for bruteforcing. It also has an "Append Mode" feature to append a string to many others.
 <br />
 <h3><i>Notes about the generator...</i></h3>
