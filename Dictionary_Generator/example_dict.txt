@@ -1,3 +1,7 @@
+# Baseword: Password
+# Minimum: 0
+# Maximum: 100
+
 Password0
 Password1
 Password2
