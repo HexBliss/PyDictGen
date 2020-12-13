@@ -3,7 +3,7 @@
 from colorama import *
 
 def getmode():
-	mode = input("Which type of dictionary would you like to generate? (Quick Generate from template word: " + Fore.YELLOW + Style.BRIGHT + "QG" + Style.RESET_ALL + ") (Append Mode: " + Fore.YELLOW + Style.BRIGHT + "AP" + Style.RESET_ALL + "): ")
+	mode = input("Which type of dictionary would you like to generate? (Quick Generate from template word: " + Fore.YELLOW + Style.BRIGHT + "QG" + Style.RESET_ALL + ") (Append Mode: " + Fore.YELLOW + Style.BRIGHT + "AP" + Style.RESET_ALL + ") (Prepend Mode: " + Fore.YELLOW + Style.BRIGHT + "PP" + Style.RESET_ALL + "): ")
 	generate(str(mode))
 def generate(mode):
 	if str(mode.lower()) == 'qg':
@@ -52,6 +52,19 @@ def generate(mode):
 				exit()
 			else:	
 				f.write(phrase + append + "\r\n")
+				write()
+		write()
+	elif str(mode.lower()) == 'pp':
+		filename = input("Input a filename for your dictionary (without a file extension, as this will automatically be set to .txt): ")	
+		f = open(str(filename) + ".txt", "a+")
+		prepend = input("Input text to prepend: ")
+
+		def write():
+			phrase = input("Input a phrase to be added: ")
+			if phrase == 'q':
+				exit()
+			else:	
+				f.write(prepend + phrase + "\r\n")
 				write()
 		write()
 	else:
