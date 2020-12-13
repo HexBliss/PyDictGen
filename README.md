@@ -7,7 +7,7 @@ This is a simple, easy to use, lightweight dictionary generator that requests a 
 <li>In QG (QuickGen) mode:
 	<ul>
 		<li>The program automatically adds 1 to the maximum value so that it will be included in the range command
-		<li>The program generates the dictionary with hybrid versions of the baseword as well. These versions replace certain letters with the number often used in place of them, such as "I" with "1", "E" with "3", and "A" with "4"
+		<li>The program generates the dictionary with hybrid versions of the baseword as well. These versions replace certain letters with the numbers often used in place of them, such as "I" with "1", "E" with "3", and "A" with "4"
 	</ul>
 <li>In AP (Append) mode:
 	<ul>
